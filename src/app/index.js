@@ -2,10 +2,10 @@
 import '../styles/index.scss';
 
 // Modules
-import './index.modules';
+import appConfig from './Modules/app.config';
+import appComponents from './Modules/app.components';
 
-// Config
-import './index.config';
-
-// Components
-import './index.components';
+angular.module('app', [
+    appComponents,
+    appConfig
+]);
